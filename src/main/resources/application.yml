@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      user: rootuser
+      password: rootpass
+      uri: mongodb://rootuser:rootpass@localhost:27017/
+      database: notepad
