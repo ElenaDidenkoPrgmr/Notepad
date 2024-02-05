@@ -41,6 +41,5 @@ public class NotepadCreateEditMapper implements IMapper<NotepadDTO, Notepad> {
         Optional.ofNullable(notepadDTO.getId())
                 .map(notepadRepository::findById)
                 .ifPresent(n -> notepad.setCreatedDate(n.get().getCreatedDate()));
-
     }
 }
